@@ -1,0 +1,600 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/WhiteColor"
+    tools:context="com.example.mandar.hackerthon_app.Fragments.HomeFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/WhiteColor"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/WhiteColor"
+            android:orientation="vertical">
+
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/SummeryLoction"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/WhiteColor"
+                android:elevation="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/WhiteColor"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2dp"
+                        android:background="@color/WhiteColor"
+                        android:elevation="10dp"
+                        android:padding="5dp"
+                        android:text="LOCATION"
+                        android:textAlignment="center"
+                        android:textColor="#FF0000"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@color/WhiteColor"
+                        android:elevation="0dp"
+                        android:orientation="horizontal"
+                        android:weightSum="360">
+
+                        <LinearLayout
+                            android:layout_width="20dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="180"
+                            android:background="@color/WhiteColor"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/WhiteColor"
+                                android:text="LATITUDE"
+                                android:textAlignment="center" />
+
+                            <TextView
+                                android:id="@+id/home_lat"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/WhiteColor"
+                                android:text="0.00"
+                                android:textAlignment="center"
+                                android:textSize="50dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="20dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="180"
+                            android:background="@color/WhiteColor"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/WhiteColor"
+                                android:text="LONGITUDE"
+                                android:textAlignment="center" />
+
+                            <TextView
+                                android:id="@+id/home_long"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/WhiteColor"
+                                android:text="0.00"
+                                android:textAlignment="center"
+                                android:textSize="50dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/summeryActualTemp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/WhiteColor"
+                android:elevation="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/WhiteColor"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2dp"
+                        android:background="@color/WhiteColor"
+                        android:elevation="10dp"
+                        android:padding="5dp"
+                        android:text="Current Temperature"
+                        android:textAlignment="center"
+                        android:textColor="#FF0000"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@color/WhiteColor"
+                        android:elevation="0dp"
+                        android:orientation="horizontal"
+                        android:weightSum="360">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="180"
+                            android:background="@color/WhiteColor"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/WhiteColor"
+                                android:text="Temperature in celcius"
+                                android:textAlignment="center" />
+
+                            <TextView
+                                android:id="@+id/home_currTemp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/WhiteColor"
+                                android:text="120"
+                                android:textAlignment="center"
+                                android:textSize="50dp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/SummeryLightings"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/WhiteColor"
+                android:elevation="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/WhiteColor"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2dp"
+                        android:background="@color/WhiteColor"
+                        android:elevation="10dp"
+                        android:padding="5dp"
+                        android:text="Lights"
+                        android:textAlignment="center"
+                        android:textColor="#FF0000"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@color/WhiteColor"
+                        android:elevation="0dp"
+                        android:orientation="horizontal"
+                        android:weightSum="360">
+
+                        <LinearLayout
+                            android:layout_width="20dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="120"
+                            android:background="@color/WhiteColor"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/WhiteColor"
+                                android:text="RED"
+                                android:textAlignment="center" />
+
+                            <TextView
+                                android:id="@+id/home_red"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/WhiteColor"
+                                android:text="120"
+                                android:textAlignment="center"
+                                android:textSize="40dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="20dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="120"
+                            android:background="@color/WhiteColor"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/WhiteColor"
+                                android:text="GREEN"
+                                android:textAlignment="center" />
+
+                            <TextView
+                                android:id="@+id/home_green"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/WhiteColor"
+                                android:text="120"
+                                android:textAlignment="center"
+                                android:textSize="40dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="20dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="120"
+                            android:background="@color/WhiteColor"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/WhiteColor"
+                                android:text="GREEN"
+                                android:textAlignment="center" />
+
+                            <TextView
+                                android:id="@+id/home_blue"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/WhiteColor"
+                                android:text="120"
+                                android:textAlignment="center"
+                                android:textSize="40dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/summeryAC"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/WhiteColor"
+                android:elevation="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/WhiteColor"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2dp"
+                        android:background="@color/WhiteColor"
+                        android:elevation="10dp"
+                        android:padding="5dp"
+                        android:text="AC"
+                        android:textAlignment="center"
+                        android:textColor="#FF0000"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@color/WhiteColor"
+                        android:elevation="0dp"
+                        android:orientation="horizontal"
+                        android:weightSum="360">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="180"
+                            android:background="@color/WhiteColor"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/WhiteColor"
+                                android:text="Requested Temperature"
+                                android:textAlignment="center" />
+
+                            <TextView
+                                android:id="@+id/home_ac"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/WhiteColor"
+                                android:text="120"
+                                android:textAlignment="center"
+                                android:textSize="50dp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/summeryFan"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/WhiteColor"
+                android:elevation="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/WhiteColor"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2dp"
+                        android:background="@color/WhiteColor"
+                        android:elevation="10dp"
+                        android:padding="5dp"
+                        android:text="FAN"
+                        android:textAlignment="center"
+                        android:textColor="#FF0000"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@color/WhiteColor"
+                        android:elevation="0dp"
+                        android:orientation="horizontal"
+                        android:weightSum="360">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="180"
+                            android:background="@color/WhiteColor"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/WhiteColor"
+                                android:text="Fan_PWM_SPEED"
+                                android:textAlignment="center" />
+
+                            <TextView
+                                android:id="@+id/home_fan"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/WhiteColor"
+                                android:text="120"
+                                android:textAlignment="center"
+                                android:textSize="50dp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/summeryTemperature"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/WhiteColor"
+                android:elevation="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/WhiteColor"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2dp"
+                        android:background="@color/WhiteColor"
+                        android:elevation="10dp"
+                        android:padding="5dp"
+                        android:text="TEMPERATURE"
+                        android:textAlignment="center"
+                        android:textColor="#FF0000"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@color/WhiteColor"
+                        android:elevation="0dp"
+                        android:orientation="horizontal"
+                        android:weightSum="360">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="180"
+                            android:background="@color/WhiteColor"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/WhiteColor"
+                                android:text="Requested Temperature"
+                                android:textAlignment="center" />
+
+                            <TextView
+                                android:id="@+id/home_temp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/WhiteColor"
+                                android:text="120"
+                                android:textAlignment="center"
+                                android:textSize="50dp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/summeryMonitoring"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/WhiteColor"
+                android:elevation="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/WhiteColor"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2dp"
+                        android:background="@color/WhiteColor"
+                        android:elevation="10dp"
+                        android:padding="5dp"
+                        android:text="Monitoring"
+                        android:textAlignment="center"
+                        android:textColor="#FF0000"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@color/WhiteColor"
+                        android:elevation="0dp"
+                        android:orientation="horizontal"
+                        android:weightSum="360">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="180"
+                            android:background="@color/WhiteColor"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/WhiteColor"
+                                android:text="Total Power Usage in last 24minutes"
+                                android:textAlignment="center" />
+
+                            <TextView
+                                android:id="@+id/home_monitor"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/WhiteColor"
+                                android:text="120"
+                                android:textAlignment="center"
+                                android:textSize="50dp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.constraint.ConstraintLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

@@ -1,0 +1,42 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mandar.hackerthon_app.Fragments.MonitoringFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="360">
+
+        <com.jjoe64.graphview.GraphView
+            android:id="@+id/graphMonitor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="180"
+            android:background="@drawable/layout_bg"
+            android:elevation="5dp"
+            android:padding="5dp" />
+
+        <com.jjoe64.graphview.GraphView
+            android:id="@+id/graphMonitor2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="180"
+            android:background="@drawable/layout_bg"
+            android:elevation="5dp"
+            android:padding="5dp" />
+    </LinearLayout>
+
+</FrameLayout>

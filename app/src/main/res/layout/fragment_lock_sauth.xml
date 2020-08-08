@@ -1,0 +1,156 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/WhiteColor"
+    tools:context="com.example.mandar.hackerthon_app.Fragments.LockSAuthFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@color/WhiteColor"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@color/WhiteColor"
+            android:elevation="5dp"
+            android:padding="10dp"
+            android:text="Enter Password"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/passwordFormat"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/WhiteColor"
+            android:elevation="5dp"
+            android:hint="*  *  *  *"
+            android:padding="10dp"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/WhiteColor">
+
+            <TableRow android:background="@color/WhiteColor">
+
+                <Button
+                    android:id="@+id/btn7"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/layout_bg"
+                    android:elevation="5dp"
+                    android:text="7"
+                    android:translationZ="5dp" />
+
+                <Button
+                    android:id="@+id/btn8"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/layout_bg"
+                    android:elevation="5dp"
+                    android:text="8"
+                    android:translationZ="5dp" />
+
+                <Button
+                    android:id="@+id/btn9"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/layout_bg"
+                    android:elevation="5dp"
+                    android:text="9"
+                    android:translationZ="5dp" />
+            </TableRow>
+
+            <TableRow android:background="@color/WhiteColor">
+
+                <Button
+                    android:id="@+id/btn4"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/layout_bg"
+                    android:elevation="5dp"
+                    android:text="4"
+                    android:translationZ="5dp" />
+
+                <Button
+                    android:id="@+id/btn5"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/layout_bg"
+                    android:elevation="5dp"
+                    android:text="5"
+                    android:translationZ="5dp" />
+
+                <Button
+                    android:id="@+id/btn6"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/layout_bg"
+                    android:elevation="5dp"
+                    android:text="6"
+                    android:translationZ="5dp" />
+            </TableRow>
+
+            <TableRow android:background="@color/WhiteColor">
+
+                <Button
+                    android:id="@+id/btn1"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/layout_bg"
+                    android:elevation="5dp"
+                    android:text="1"
+                    android:translationZ="5dp" />
+
+                <Button
+                    android:id="@+id/btn2"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/layout_bg"
+                    android:elevation="5dp"
+                    android:text="2"
+                    android:translationZ="5dp" />
+
+                <Button
+                    android:id="@+id/btn3"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/layout_bg"
+                    android:elevation="5dp"
+                    android:text="3"
+                    android:translationZ="5dp" />
+            </TableRow>
+
+            <TableRow android:background="@color/WhiteColor">
+
+                <Button
+                    android:id="@+id/btnStar"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/layout_bg"
+                    android:elevation="5dp"
+                    android:text="*"
+                    android:translationZ="5dp" />
+
+                <Button
+                    android:id="@+id/btn0"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/layout_bg"
+                    android:elevation="5dp"
+                    android:text="0"
+                    android:translationZ="5dp" />
+
+                <Button
+                    android:id="@+id/btnHash"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/layout_bg"
+                    android:elevation="5dp"
+                    android:text="#"
+                    android:translationZ="5dp" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+</FrameLayout>

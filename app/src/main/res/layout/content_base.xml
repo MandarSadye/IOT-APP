@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.mandar.hackerthon_app.Activities.BaseActivity"
+    tools:showIn="@layout/app_bar_base">
+
+    <FrameLayout
+        android:id="@+id/frameBaseFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></FrameLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_anchor="@id/frameBaseFragment"
+        android:layout_margin="20dp"
+        app:layout_anchorGravity="bottom|end"
+        android:scaleType="center"
+        android:elevation="10dp"
+        app:pressedTranslationZ="10dp"
+        app:backgroundTint="@color/common_google_signin_btn_text_dark_default"
+        app:srcCompat="@mipmap/ic_connection_on_round" />
+
+</android.support.design.widget.CoordinatorLayout>

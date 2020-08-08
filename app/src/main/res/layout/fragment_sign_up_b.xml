@@ -1,0 +1,125 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mandar.hackerthon_app.Fragments.SignUpB">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="360">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="240"
+            android:fillViewport="true"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:stretchColumns="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp"
+                    android:text="Sign Up"
+                    android:textAlignment="center"
+                    android:textColor="#ff6f00"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Enter your Age..."
+                    android:textColor="#00aa00" />
+
+                <EditText
+                    android:id="@+id/SignUpAge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:inputType="numberSigned"
+                    android:textAlignment="center" />
+
+                <RadioButton
+                    android:id="@+id/radioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#fcdbb7"
+                    android:text="Default Sleep Time"
+                    android:textAlignment="center"
+                    android:textColor="#ffab0e"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Sleep Duration..."
+                    android:textColor="#00aa00" />
+
+                <EditText
+                    android:id="@+id/SignUpSleepTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:enabled="false"
+                    android:inputType="none"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Weight in kg ..."
+                    android:textColor="#00aa00" />
+
+                <EditText
+                    android:id="@+id/SignUpWeight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:inputType="numberSigned"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Hight in cm ..."
+                    android:textColor="#00aa00" />
+
+                <EditText
+                    android:id="@+id/SignUpHeight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:inputType="numberSigned"
+                    android:textAlignment="center" />
+
+            </TableLayout>
+
+
+        </ScrollView>
+
+        <Button
+            android:id="@+id/NextButtonB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="120"
+            android:background="#00c800"
+            android:text="Next"
+            android:textColor="#ffffff"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</FrameLayout>
